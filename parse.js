@@ -13,5 +13,6 @@ fs.readFile(process.argv[2], 'utf8', (err, rtf) => {
 		process.exit(-1);
 	}
 	var ast = parser.parse(rtf);
-	console.log(ast);
+	//console.log(ast);
+	console.log(ast.toHtml());
 })
