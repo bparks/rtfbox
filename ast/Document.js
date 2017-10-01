@@ -5,9 +5,9 @@ class Document {
 		this.contents = contents
 	}
 
-	toHtml() {
+	toHtml(header) {
 		return "<body>" + this.contents.map((section) => {
-			return section.toHtml();
+			return section.toHtml(header);
 		}).join("") + "</body>";
 	}
 }

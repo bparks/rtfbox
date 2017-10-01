@@ -8,6 +8,7 @@ class File {
 	}
 
 	toHtml() {
+		this.header._state = [];
 		return this.document.toHtml(this.header);
 	}
 }
